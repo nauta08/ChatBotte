@@ -59,10 +59,34 @@ public class Main {
         // Contrôle+Click sur lireLesQuestions est un racoourci pour y aller.
         List<Question> questions = Fichier.lireLesQuestions();
 
+        // 'if' permet d'introduire une condition.
+        // ce qui est présent après l'accolade ne sera exécuter que si ce qui est écrit entre les parenthèses est vrai.
+        // questions.isEmpty() va tester si la liste des questions est vide.
+        // isEmpty() est une fonction, comme l'indique la présence des deux parenthèses
+        // Cette fonction est présente dans la classe List (pour faire simple). On peut l'utiliser sans travail supplémentaire.
         if (questions.isEmpty()){
+            // Donc si la liste est vide, on entre dans cette partie du code.
+            // Sinon on va directement après l'accolade fermante (ligne 85).
+
+            // 'System.out.println' est un appel à une autre fonction.
+            // On ne l'a ni écrit ni importé. Sa présence est garantie 'de base'
+            // Mais il faut préciser où le trouver : dans le package System.out
+            // Entre les parenthèses, on passe un argument.
+            // A chaque appel on peut imprimer quelque chose de différent : la chaîne de caractères passée à l fonction
+            // Ici : "Saisir une première question : "
+            // Les doubles quotes définissent une chaîne de caractères.
             System.out.println("Saisir une première question : ");
+
+            // Après cet affichage, on délèque la suite du traitement à une autre fonction de Fichier
+            // cette fonction attends 2 arguments :
+            // - isQuestion, on lui passe true
+            // - question, on lui passe null (je reparlerai de null)
             Fichier.ecrire(true, null);
         }
+
+        // 'while' permet de répéter un comporement (le bloc d'instructions après l'accolade)
+        // la répétition se fera tant que l'élémént entre parenthèse sera vrai
+        // si 'encore' vaut false, on saute à l'accolade fermante de la ligne 94
         while (encore) {
             Integer index = Math.toIntExact(Math.round(Math.random() * (questions.size() -1)));
             System.out.println(questions.get(index));

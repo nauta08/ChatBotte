@@ -1,5 +1,25 @@
-?Comment vas tu?
-Tr�s bien
-Moyen
-Super
+?Dois-je apprendre une nouvelle question ?
+Oui
+Non
 
+?Dois je proposer une question ?
+Non
+La première
+La dernière
+Une au hazard
+
+?Dois-je apprendre une nouvelle classe de questions ?
+Non
+Quand
+Où
+Qui
+Pourquoi
+Comment
+
+?Est-ce serieux ?
+Oui
+Non
+
+?Dois je apprendre une nouvelle classe de réponse ?
+Oui
+Non
