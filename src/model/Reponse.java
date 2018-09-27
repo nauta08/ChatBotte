@@ -26,6 +26,13 @@ public class Reponse {
     public void setIndex(Integer index) {
         this.index = index;
     }
+    
+/*
+ * TODO lancer le programme avec le bloc commenté
+ * pour voir le comprtement par défaut
+ * puis décommenter er voir la différence    
+ */
+    
     @Override
     public String toString(){
         return this.getIndex() + ": " + this.getReponse();
