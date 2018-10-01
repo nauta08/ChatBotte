@@ -21,7 +21,7 @@ import java.util.List;
 
 // 'public' ici est obligatoire.
 // 'class' scpécifie que notre fichier contiendra des fonctions et des propriétés
-// La classe doit avoir le même nom que le fichier qui la contient (ici Main.java donne la classe Main)
+// La classe doit avoir le même nom que le fichier qui la contient (ici Main_doc.java donne la classe Main_doc)
 // Traditionnellement, une classe commence par une majuscule.
 // Le caractère '{' indique que l'on rentre dans la définition proprement dite de la classe.
 public class Main_doc {
