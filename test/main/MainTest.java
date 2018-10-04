@@ -18,7 +18,7 @@ public class MainTest{
 
         List<String> liste = new ArrayList<>();
         // ici la liste est vide
-        assertTrue("Normalement la liste est vide", liste.isEmpty());
+        assertTrue("Normalement la liste est vide", liste.isEmpty()); // cette ligne doit être déplacée pour que le test soit ok
         liste.add("un"); // index = 0
         liste.add("deux"); // index = 1
         liste.add("trois"); // index = 2
@@ -36,11 +36,11 @@ public class MainTest{
         }
 
         // puis je fais tourner mille fois la transformation de ce nombre aléatoire en index valide pour un de nos 5 éléments
-        for (int i = 0; i < 1000; i++){
+        for (int i = 0; i < 10000; i++){
             // Je le génère (indication : à comparer avec le code de Main.java)
             Integer index = Math.toIntExact(Math.round(Math.random() * (liste.size())));
             // Je l'affiche'
-            System.out.println(index);
+            System.out.println(index + " " + liste.get(index));// Je comprends !!!!!!!!!!
             // je le teste ...
             assertTrue("La valeur aléatoire doit valoir entre 0 et 4 or l'index ici vaut : " + index, index >= 0 && index <= 4);
         }
